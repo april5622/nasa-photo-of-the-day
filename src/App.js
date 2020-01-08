@@ -1,13 +1,18 @@
 import React from "react";
+import PhotoList from "./components/PhotoList";
+import logo from "./asserts/logo.png";
 import "./App.css";
+
+
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <div className = "logo_container">
+        <img className="logo" src={logo} alt="Nasa offical logo"/>
+        <h1>NASA Photo of the Day!</h1>
+        <PhotoList />
+      </div>
     </div>
   );
 }
