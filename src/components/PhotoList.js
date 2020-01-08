@@ -16,21 +16,19 @@ export default function PhotoList(){
                 console.log("The data was not returned", err);
             });
     }, []);
-    console.log("photos1", photos);
+    //console.log("photos1", photos);
     //console.log(photos)
     return (
-        <div className="photo">
-            {/* {photos.map(photo => {
-                return (
-                    <PhotoCard
-                        title= {photo.title}
-                        copyright={photo.copyright}
-                        explanation={photo.explanation}
-                        image={photo.hdurl}
-                        url={photo.url}
-                    />
-                );
-            })} */}
+        <div className="photo">         
+                <PhotoCard
+                    title= {photos.title}
+                    date={photos.date}
+                    explanation={photos.explanation}
+                    image={photos.hdurl}
+                    url={photos.url}
+                    copyright={photos.copyright}
+                 />
+    
         </div>
     );
 
