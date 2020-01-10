@@ -28,7 +28,7 @@ export default function PhotoList(){
                     url={photos.url}
                     copyright={photos.copyright}
                  />
-    
+   
         </div>
     );
 
